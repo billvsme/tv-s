@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
+import {Router} from 'react-router';
+import AppRoutes from './app-routes.jsx';
 
-import AppBar from 'material-ui/lib/app-bar';
-import LeftNav from 'material-ui/lib/left-nav';
-import MenuItem from 'material-ui/lib/menus/menu-item';
+//import AppBar from 'material-ui/lib/app-bar';
+//import LeftNav from 'material-ui/lib/left-nav';
+//import MenuItem from 'material-ui/lib/menus/menu-item';
 
+/*
 class App extends React.Component {
     render () {
         return (
@@ -21,8 +24,11 @@ class App extends React.Component {
         )
     }
 }
+*/
 
 ReactDOM.render(
-    <App />,
+    <Router>
+        {AppRoutes}
+    </Router>,
     document.getElementById('main')
 )
