@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 import {Router} from 'react-router';
-import AppRoutes from './app-routes.jsx';
+import AppRoutes from './app-routes';
 
 //import AppBar from 'material-ui/lib/app-bar';
 //import LeftNav from 'material-ui/lib/left-nav';
