@@ -20,6 +20,10 @@ gulp.task('default', function() {
                     query: {
                         presets: ['es2015', 'react']
                     }
+                },
+                {
+                    test: /\.md$/,
+                    loader: 'raw-loader'
                 }
             ]
         }
