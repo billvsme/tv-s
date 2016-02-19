@@ -3,6 +3,7 @@ import TextField from 'material-ui/lib/text-field';
 import IconButton from 'material-ui/lib/icon-button';
 import RaisedButton from 'material-ui/lib/raised-button';
 import FlatButton from 'material-ui/lib/flat-button';
+import ActionSearch from 'material-ui/lib/svg-icons/action/search';
 
 
 class Home extends React.Component {
@@ -20,14 +21,14 @@ class Home extends React.Component {
                       defaultValue="喜剧电影"
                 />
                 <IconButton
-                    iconClassName="material-icons"
                     tooltip="搜索"
                     tooltipPosition="top-center"
                 >
-                    search
+                    <ActionSearch />
                 </IconButton>
                 <div>
-                    <FlatButton label="Index" />
+                    <FlatButton label="每日推荐" />
+                    <FlatButton label="索引" />
                 </div>
                 <h1 style={{color: '#FFF', marginTop: '150px'}}>
                     提供最新最全都电影、动漫、演员的信息。

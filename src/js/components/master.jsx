@@ -51,6 +51,11 @@ class Master extends React.Component {
 
         return styles;
     }
+    handleTouchTapLeftIconButton() {
+        this.setState({
+            leftNavOpen: !this.state.leftNavOpen
+        });
+    }
     render() {
         const title = (
             <div>
@@ -79,8 +84,8 @@ class Master extends React.Component {
                     style={styles.appBar}
                     zDepth={0}
                     showMenuIconButton={showMenuIconButton}
-                >
-                </AppBar>
+                    onLeftIconButtonTouchTap={this.handleTouchTapLeftIconButton.bind(this)}
+                />
                 {React.cloneElement(this.props.children, {styles: styles})}
                 <AppLeftNav
                     docked={docked}
